@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.urls import path
 
 
-from slvs.views import home_view
+from slvs.views import home_view, demo_view
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_view),
+    path('demo/', demo_view),
 ]
