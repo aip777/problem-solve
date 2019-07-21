@@ -1,0 +1,39 @@
+{% load static %}
+{% load humanize %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<title>Bartosz Kownacki</title>
+	<meta name="description" content="Portfolio Bartosza Kownackiego studenta I roku automatyki i robotyki na Politechnice Poznańskiej"/>
+	<meta name="keywords" content="Bartosz, Kownacki, student, portfolio, Politechnika Poznańska, Politechnika"/>
+
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/fontello.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato&amp;subset=latin-ext" rel="stylesheet">
+
+	<script src="{% static 'timer.js' %} "></script>
+</head>
+
+
+<body>
+
+
+
+  {% block content %}
+
+  {% endblock %}
+
+
+
+
+<script src="{% static 'timer.js' %} "></script>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+  
+<body onload="odliczanie();">
+
+	<div id="container">
+
+	  <div class="rectangle">
+		<div id="logo"><a href="bartoszkownacki" class="tilelink">Bartosz Kownacki </a></div>
+		<div style="clear:both;"></div>
+	  </div>
+
+	  <div class="square">
+
+		<div class="tile1">
+			<a class="tilelink" href="kim-jestem">
+				<i class="icon-user"></i><br/> Kim jestem?
+			</a>
+		</div>
+		<div class="tile1">
+			<a class="tilelink" href="nauka">
+				<i class="icon-laptop"></i><br/> Czego się uczę?
+			</a>
+		</div>
+		<div style="clear:both;"></div>
+
+		<div class="tile2">
+			<a class="tilelink" href="cv-bartosz-kownacki" target="_blank">
+				<i class="icon-graduation-cap"></i><br/> CV
+			</a>
+		</div>
+		<div class="tile3">
+			<a class="tilelink" href="kontakt">
+				<i class="icon-mail"></i><br/> Kontakt
+			</a>
+		</div>
+		<div style="clear:both;"></div>
+
+		<div class="tile4">
+		<img class="pplogo" src="pplogo.png"/>
+		</div>
+
+	  </div>
+
+
+        <div class="square">
+		{% block content %} to replace {% endblock %}
+          <div class="tile5">
+			<div id="zegar"></div>
+		</div>
+
+
+
+            <div class="gh">
+			<a class="sociallink" href="https://github.com/BartekKownacki" target="_blank">
+				<i class="icon-github-circled"></i>
+			</a>
+		</div>
+
+		<div class="Ld">
+			<a class="sociallink" href="https://www.linkedin.com/in/bartosz-kownacki-b1b760178/" target="_blank">
+				<i class="icon-linkedin"></i>
+			</a>
+		</div>
+	  </div>
+
+	  <div style="clear: both;"></div>
+
+	  <div class="rectangle">
+		2019 &copy; Bartosz Kownacki - Portfolio. Student I roku Automatyki i Robotyki! <i class="icon-mail-alt"></i>  bartosz.kown@gmail.com
+
+	  </div>
+
+	</div>
+
+
+</body>
+
